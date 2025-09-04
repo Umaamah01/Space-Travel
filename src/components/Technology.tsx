@@ -32,17 +32,17 @@ const Technology: React.FC = () => {
       className="flex flex-col items-center min-h-screen px-6 md:px-16 text-white bg-cover bg-center pt-32 md:pt-40"
       style={{ backgroundImage: "url('/technology-bg.jpg')" }}
     >
-      {/* Title */}
+      
       <h2 className="flex flex-col md:flex-row md:items-center gap-4 tracking-[4px] text-gray-400 mb-12 text-xl md:text-2xl w-full md:w-auto md:self-start font-barlowCondensed">
         <span className="font-bold text-white/40">03</span>
         <span className="uppercase">Space Launch 101</span>
       </h2>
 
-      {/* Wrapper: Info + Image */}
+      
       <div className="flex flex-col-reverse md:flex-row items-center justify-between w-full max-w-6xl gap-16">
-        {/* Left: Tabs + Text */}
+        
         <div className="flex-1 flex flex-col md:flex-row md:items-center gap-8 max-w-xl">
-          {/* Tabs */}
+          
           <div className="flex md:flex-col justify-center md:justify-start space-x-4 md:space-x-0 md:space-y-4">
             {technologies.map((_, i) => (
               <button
@@ -59,7 +59,7 @@ const Technology: React.FC = () => {
             ))}
           </div>
 
-          {/* Text Info */}
+          
           <div className="text-center md:text-left space-y-6">
             <p className="uppercase text-gray-400 text-sm md:text-base font-barlowCondensed">
               The terminology...
@@ -73,16 +73,16 @@ const Technology: React.FC = () => {
           </div>
         </div>
 
-        {/* Right: Images */}
+        
         <div className="flex-1 flex justify-center">
-          {/* Desktop */}
+          
           <img
             src={technologies[selected].image}
             alt={technologies[selected].name}
             className="hidden md:block w-[400px] lg:w-[500px] object-contain"
           />
 
-          {/* Mobile */}
+          
           <img
             src={technologies[selected].imageMobile}
             alt={technologies[selected].name}

@@ -9,7 +9,7 @@ const Hero: React.FC = () => {
       className="flex flex-col md:flex-row items-center md:justify-between min-h-screen px-8 md:px-16 bg-cover bg-center text-white pt-16 md:pt-28"
       style={{ backgroundImage: "url('/bg-home.jpg')" }}
     >
-      {/* Text */}
+      
       <div className="max-w-xl text-center md:text-left space-y-4 md:space-y-6">
         <p className="tracking-[4px] text-gray-400 uppercase font-barlowCondensed">
           So, you want to travel to
@@ -25,7 +25,7 @@ const Hero: React.FC = () => {
         </p>
       </div>
 
-      {/* Explore Button */}
+      
       <div className="flex items-center justify-center mt-8 md:mt-0">
         <button
           onClick={() => navigate("/destination")}
